@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test- AEM</title>
+    <!-- A rajouter un logo -->
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="toggle - day and night.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="Logo AEM.png" alt="Logo de Armorique En avant Morbihan" class="Logo">
+            <a href="accueil.html" class="headband">Accueil</a>
+            <a href="equipe.html" class="headband">Equipe</a>
+            <a href="boutique.html" class="headband">Boutique</a>
+            <a href="#" class="headband">Panier (<span id="cart-count">0</span>)</a>
+
+            <div class="header-toggle">
+                <!-- Theme toggle -->
+                <input type="checkbox" id="darkmode-toggle">
+                <label for="darkmode-toggle" id="darkmod-label"></label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="https://th.bing.com/th/id/R.98882d0d3056fcadc33dfcc15c2d8f9e?rik=IoExO19m%2ftfqxg&riu=http%3a%2f%2fwww.luneau.interco-abl.com%2fimages%2fstade.png&ehk=g%2bDGY0CHMAtuTOH9%2fdeeOSRNSYxvNXG8Vj4HQ%2fXUKfg%3d&risl=&pid=ImgRaw&r=0"
+                alt="Stade" class="stadium-img" />
+        </section>
+
+        <section class="jerseys">
+            <h2>Nos maillots</h2>
+            <div class="jersey-grid">
+                <figure>
+                    <img src="Maillot 1.png" alt="Maillot domicile" />
+                    <figcaption>Maillot domicile</figcaption>
+                </figure>
+                <figure>
+                    <img src="Maillot 2.png" alt="Maillot extérieur" />
+                    <figcaption>Maillot extérieur</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-map">
+            <div class="address">
+                <h3>Contact et adresse</h3>
+                <p><strong>AEM Association</strong></p>
+                <p>12 Rue du Stade</p>
+                <p>75000 Ville</p>
+                <p><a href="tel:+33000000000" class="tel">Tél : 00 00 00 00 00</a></p>
+                <p><a href="mailto:exemple@mail.fr" class="mail">Email : Exemple@mail.fr</a></p>
+            </div>
+            <div class="map">
+                <iframe src="https://maps.google.com/maps?q=stade%20de%20france&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>© <span id="year"></span> AEM — Tous droits réservés. — <i class="bi bi-instagram"></i> <i
+                class="bi bi-facebook"></i> </div>
+    </footer>
+    <script src="test.js"></script>
+    <script src="toggle -  day and night.js"></script>
+</body>
+
+</html>
