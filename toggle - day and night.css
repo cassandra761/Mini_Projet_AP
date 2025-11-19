@@ -33,7 +33,7 @@
 
 /* Mode sombre activé */
 #darkmode-toggle:checked + #darkmod-label {
-  background: #1c2e54;
+  background: #005528;
 }
 
 /* L’animation du rond en mode sombre */
@@ -44,5 +44,5 @@
 
 /* Couleur de fond de la page en mode sombre */
 body.dark {
-  background: linear-gradient(180deg, #1c2e54, #020407);
+  background: linear-gradient(180deg, #2a2a2a, #005b2b);
 }
