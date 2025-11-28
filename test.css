@@ -223,6 +223,24 @@ body {
   margin-top: 28px
 }
 
+.container_footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.right_footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.left_footer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 14px;
+}
+
 /* responsive */
 @media (max-width:800px) {
   .contact-map {
