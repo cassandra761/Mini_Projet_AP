@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: #ff0000;
     height: 100px;
     width: 100%;
     padding: 0 20px;
@@ -30,6 +30,8 @@ header {
     text-align: center;
     color: #000;
     text-decoration: none;
+    font-family: 'Oleo Script', cursive;
+    font-size: 20px;   
     padding: 10px 0;
     border-radius: 20px;
     transition: background 500ms ease, color 300ms ease;
@@ -150,7 +152,9 @@ body {
 
 .hero {
   width: 100%;
-  overflow: hidden
+  overflow: hidden;
+  font-family: "montserrat", system-ui;
+  font-size: 18px;
 }
 
 .stadium-img {
@@ -163,7 +167,9 @@ body {
 .jerseys {
   max-width: 1100px;
   margin: 28px auto;
-  padding: 0 18px
+  padding: 0 18px;
+  font-family: "montserrat", system-ui;
+  font-size: 18px;
 }
 
 .jersey-grid {
@@ -194,7 +200,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  padding: 0 18px
+  padding: 0 18px;
+  font-family: "Montserrat", system-ui;
+  font-size: 18px;
 }
 
 .contact-map .address {
@@ -211,33 +219,34 @@ body {
   overflow: hidden
 }
 
-.site-footer {
+.container_footer {
   background: #005528;
   color: #fff;
   height: 100px;
   padding: 14px 20px;
+  margin-top: 28px;
   display: flex;
-  text-align: center;
+ flex-direction: row-reverse;
+}
+
+.right_footer{
+  width: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 28px
 }
 
-.container_footer {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.right_footer {
-  display: flex;
-  justify-content: right;
-  align-items: center;
+.right_footer a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .left_footer {
+  width: 50%;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+
   font-size: 14px;
 }
 

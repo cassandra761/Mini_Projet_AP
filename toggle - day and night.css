@@ -4,7 +4,7 @@
   height: 50px;
   position: relative;
   display: flex;
-  background: #005528;
+  background: #01371D;
   border-radius: 100px;
   box-shadow: inset 0 5px 15px rgba(0,0,0,0.4),
               inset 0 -5px 15px rgba(255,255,255,0.4);
@@ -33,7 +33,7 @@
 
 /* Mode sombre activé */
 #darkmode-toggle:checked + #darkmod-label {
-  background: #005528;
+  background: #01371D;
 }
 
 /* L’animation du rond en mode sombre */
@@ -44,5 +44,5 @@
 
 /* Couleur de fond de la page en mode sombre */
 body.dark {
-  background: linear-gradient(180deg, #2a2a2a, #005b2b);
+  background: linear-gradient(180deg, #2a2a2a, #01371D);
 }

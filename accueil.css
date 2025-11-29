@@ -1,12 +1,19 @@
 /* Welcome.css */
 
+:root {
+  --green: #01371D;
+  --white: #fff;
+  --gray: #3a3a3a;
+  --black: #000000;
+}
+
 /* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: var(--white);
     height: 100px;
     width: 100%;
     padding: 0 20px;
@@ -28,7 +35,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #000;
+    color: var(--black);
     text-decoration: none;
     padding: 10px 0;
     border-radius: 20px;
@@ -37,13 +44,13 @@ header {
 
 /* Hover & active states */
 .headband:hover { 
-    background: #00371c; 
-    color: #f7f6f5; 
+    background: var(--green); 
+    color: var(--white); 
 }
 
 .headband.active {
-    background: #00371c;
-    color: #f7f6f5 !important;
+    background: var(--green);
+    color: var(--white);
 }
 
 /* Header toggle button */
@@ -69,82 +76,32 @@ header {
 
 /* General body styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: montserrat, sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     width: 100%;
-    background: #fff;
-    color: #000;
+    background: var(--white);
+    color: var(--black);
 }
 
-
-
-/*A modifier*/
-
-:root {
-  --primary: #005538;
-  --muted: #2a2a2a;
-  --bg: #f7f7f7;
-}
-
-* {
-  box-sizing: border-box
-}
-
-body {
-  font-family: Inter, Segoe UI, Arial, sans-serif;
-  margin: 0;
-  background: var(--bg);
-  color: #222
-}
-
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06)
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px
-}
-
-.club-name {
-  font-weight: 700;
-  font-size: 1.2rem
-}
-
-.main-nav {
-  display: flex;
-  gap: 16px;
-  align-items: center
-}
-
-.main-nav .nav-link {
-  color: var(--muted);
-  text-decoration: none;
-  padding: 6px 8px;
-  border-radius: 4px
-}
+/*----------------------------------------------------------------------------------------------------------------*/
+          /*MODIFICATION*/
+/*----------------------------------------------------------------------------------------------------------------*/
 
 .tel {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--green);
 }
 
 .mail {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--green);
 }
 
 .main-nav .nav-link:hover,
 .main-nav .nav-link.active {
-  color: var(--primary);
+  color: var(--green);
   font-weight: 600
 }
 
@@ -174,7 +131,7 @@ body {
 }
 
 .jersey-grid figure {
-  background: #fff;
+  background: var(--white);
   padding: 8px;
   border-radius: 8px;
   text-align: center;
@@ -198,7 +155,7 @@ body {
 }
 
 .contact-map .address {
-  background: #fff;
+  background: var(--white);
   padding: 18px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04)
@@ -206,14 +163,14 @@ body {
 
 .contact-map .map {
   height: 300px;
-  background: #ddd;
+  background: var(--white);
   border-radius: 8px;
   overflow: hidden
 }
 
 .container_footer {
-  background: #005528;
-  color: #fff;
+  background: var(--green);
+  color: var(--white);
   height: 100px;
   padding: 14px 20px;
   margin-top: 28px;
@@ -221,13 +178,16 @@ body {
  flex-direction: row-reverse;
 }
 
-.right_footer a{
-  text-decoration: none;
-  color: #fff;
+.right_footer{
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.right_footer a{
+  text-decoration: none;
+  color: var(--white);
 }
 
 .left_footer {
@@ -250,26 +210,25 @@ body {
   }
 }
 
-
-
-
-/* Dark mode styles */
+/*----------------------------------------------------------------------------------------------------------------*/
+          /*DARK MODE*/
+/*----------------------------------------------------------------------------------------------------------------*/
 
 body.dark #theme-toggle {
     border-color: rgba(255,255,255,0.08);
 }
 
 body.dark header {
-    background-color: #3a3a3a; /* couleur sombre du header */
+    background-color: var(--gray);
 }
 
 body.dark .headband {
-    color: #fff; /* texte du menu en blanc */
+    color: var(--white);
 }
 
 body.dark .headband:hover {
-    background: #00371c;
-    color: #fff;
+    background: var(--green);
+    color: var(--white);
 }
 
 header.dark #theme-toggle {
@@ -277,20 +236,37 @@ header.dark #theme-toggle {
 }
 
 body.dark .hero {
-    color: #fff; /* texte clair sur fond sombre */
+    color: var(--white);
+}
+
+body.dark .jerseys {
+    color: var(--white);
+}
+
+body.dark .jersey-grid figure {
+    background: var(--gray);
+}
+
+body.dark .contact-map .address {
+    background: var(--gray);
+}
+
+body.dark .address {
+    color: var(--white);
+}
+
+body.dark .address a {
+    color: var(--vhite);
 }
 
 body.dark .btn {
-    background-color: #3a3a3a;
-    color: #fff;
+    background-color: var(--gray);
+    color: var(--white);
 }
 
 body.dark .btn:hover {
-    background-color: #00371c;
-    color: #fff;
-}
-body.dark {
-    background: #1a1a1a; /* fond sombre pour le corps */
+    background-color: var(--green);
+    color: var(--white);
 }
 
 body.dark #theme-toggle {
@@ -303,4 +279,8 @@ body.dark #theme-toggle {
 
 body.dark #theme-toggle {
     border-color: rgba(255,255,255,0.08);
+}
+
+body.dark .container_footer {
+    background: var(--gray);
 }
