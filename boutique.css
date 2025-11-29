@@ -1,12 +1,19 @@
 /* Welcome.css */
 
+:root {
+  --green: #01371D;
+  --white: #fff;
+  --gray: #3a3a3a;
+  --black: #000000;
+}
+
 /* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #f7f6f5;
+    background-color: var(--white);
     height: 100px;
     width: 100%;
     padding: 0 20px;
@@ -28,7 +35,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #000;
+    color: var(--black);
     text-decoration: none;
     padding: 10px 0;
     border-radius: 20px;
@@ -36,14 +43,14 @@ header {
 }
 
 /* Hover & active states */
-.headband:hover {
-    background: #00371c;
-    color: #f7f6f5;
+.headband:hover { 
+    background: var(--green); 
+    color: var(--white); 
 }
 
 .headband.active {
-    background: #00371c;
-    color: #f7f6f5 !important;
+    background: var(--green);
+    color: var(--white);
 }
 
 /* Header toggle button */
@@ -57,54 +64,30 @@ header {
 /* Theme toggle button */
 #theme-toggle {
     background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0,0,0,0.08);
     padding: 6px 8px;
     border-radius: 6px;
     cursor: pointer;
 }
 
-.Logo {
+.Logo{
     height: 100%;
 }
 
 /* General body styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: montserrat, sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     width: 100%;
-    background: #fff;
-    color: #000;
+    background: var(--white);
+    color: var(--black);
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px
-}
-
-
-/*A modifier*/
-
-:root {
-    --primary: #005538;
-    --muted: #040303;
-    --bg: #f7f7f7;
-}
-
-* {
-    box-sizing: border-box
-}
-
-.contact-map {
-    max-width: 1100px;
-    margin: 28px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    padding: 0 18px
-}
+/*----------------------------------------------------------------------------------------------------------------*/
+          /*MODIFICATION*/
+/*----------------------------------------------------------------------------------------------------------------*/
 
 .products {
     max-width: 1000px;
@@ -116,7 +99,7 @@ body {
 }
 
 .product {
-    background: #fff;
+    background: var(--white);
     padding: 12px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
@@ -135,7 +118,7 @@ body {
 }
 
 .product .price {
-    color: #005538;
+    color: var(--green);
     font-weight: 700
 }
 
@@ -144,27 +127,27 @@ body {
     padding: 8px 12px;
     border-radius: 6px;
     border: none;
-    background: #005538;
-    color: #fff;
+    background: var(--green);
+    color: var(--white);
     cursor: pointer
 }
 
 /*partie pour le pannier*/
 #clear-cart {
-    background: #2a2a2a;
+    background: var(--gray);
     padding: 6px 10px;
     border-radius: 6px;
-    color: #fff;
+    color: var(--white);
     border: none;
     cursor: pointer"
 
 }
 
 #checkout {
-    background: #005538;
+    background: var(--green);
     padding: 6px 10px;
     border-radius: 6px;
-    color: #fff;
+    color: var(--white);
     border: none;
     cursor: pointer"
 
@@ -178,7 +161,7 @@ body {
     width: 320px;
     max-height: 70vh;
     overflow: auto;
-    background: #fff;
+    background: var(--white);
     border-radius: 8px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
     padding: 12px;
@@ -195,7 +178,7 @@ body {
     gap: 8px;
     align-items: center;
     padding: 8px 0;
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid var(--white)
 }
 
 .cart-item img {
@@ -221,88 +204,108 @@ body {
 .cart-empty {
     text-align: center;
     padding: 18px 0;
-    color: #666
+    color: var(--black)
 }
 
-/*Fin du à modifier*/
+/*----------------------------------------------------------------------------------------------------------------*/
+          /*FIN MODIFICATION*/
+/*----------------------------------------------------------------------------------------------------------------*/
 
-.site-footer {
-    background: #005528;
-    color: #fff;
-    height: 100px;
-    padding: 14px 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 28px
+.container_footer {
+  background: var(--green);
+  color: var(--white);
+  height: 60px;
+  padding: 14px 20px;
+  margin-top: 28px;
+  display: flex;
+ flex-direction: row-reverse;
+}
+
+.right_footer{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_footer a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.left_footer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
 }
 
 /* responsive */
 @media (max-width:800px) {
-    .contact-map {
-        grid-template-columns: 1fr;
-    }
+  .contact-map {
+    grid-template-columns: 1fr;
+  }
 
-    .stadium-img {
-        height: 220px
-    }
+  .stadium-img {
+    height: 220px
+  }
 }
 
 
-/* Dark mode styles */
+/*----------------------------------------------------------------------------------------------------------------*/
+          /*DARK MODE*/
+/*----------------------------------------------------------------------------------------------------------------*/
 
 body.dark #theme-toggle {
-    border-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255,255,255,0.08);
 }
 
 body.dark header {
-    background-color: #3a3a3a;
-    /* couleur sombre du header */
+    background-color: var(--gray);
 }
 
 body.dark .headband {
-    color: #fff;
-    /* texte du menu en blanc */
+    color: var(--white);
 }
 
 body.dark .headband:hover {
-    background: #00371c;
-    color: #fff;
+    background: var(--green);
+    color: var(--white);
 }
 
 header.dark #theme-toggle {
-    border-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255,255,255,0.08);
 }
 
-body.dark .hero {
-    color: #fff;
-    /* texte clair sur fond sombre */
+body.dark .product {
+    background: var(--gray);
+    color: var(--white);
 }
 
 body.dark .btn {
-    background-color: #3a3a3a;
-    color: #fff;
+    background-color: var(--gray);
+    color: var(--white);
 }
 
 body.dark .btn:hover {
-    background-color: #00371c;
-    color: #fff;
-}
-
-body.dark {
-    background: #1a1a1a;
-    /* fond sombre pour le corps */
+    background-color: var(--green);
+    color: var(--white);
 }
 
 body.dark #theme-toggle {
-    border-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255,255,255,0.08);
 }
 
 body.dark #theme-toggle {
-    border-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255,255,255,0.08);
 }
 
 body.dark #theme-toggle {
-    border-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark .container_footer {
+    background: var(--gray);
 }
