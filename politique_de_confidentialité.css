@@ -1,0 +1,232 @@
+/* Welcome.css */
+
+:root {
+  --green: #01371D;
+  --white: #fff;
+  --gray: #3a3a3a;
+  --black: #000000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    height: 100px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+.headband {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--black);
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 20px;
+    transition: background 500ms ease, color 300ms ease;
+}
+
+/* Hover & active states */
+.headband:hover { 
+    background: var(--green); 
+    color: var(--white); 
+}
+
+.headband.active {
+    background: var(--green);
+    color: var(--white);
+}
+
+/* Header toggle button */
+.header-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.Logo{
+    height: 100%;
+}
+
+/* General body styles */
+body {
+    font-family: montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--white);
+    color: var(--black);
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+          /*MODIFICATION*/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.hero {
+  width: 100%;
+  overflow: hidden
+}
+
+.stadium-img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover
+}
+
+.legal-mentions h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--green);
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+          /*FIN MODIFICATION*/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.container_footer {
+  background: var(--green);
+  color: var(--white);
+  height: 60px;
+  padding: 14px 20px;
+  margin-top: 28px;
+  display: flex;
+ flex-direction: row-reverse;
+}
+
+.right_footer{
+  width: 50%;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_footer a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.left_footer {
+  width: 50%;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+}
+
+/* responsive */
+@media (max-width:800px) {
+  .contact-map {
+    grid-template-columns: 1fr;
+  }
+
+  .stadium-img {
+    height: 220px
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+          /*DARK MODE*/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark header {
+    background-color: var(--gray);
+}
+
+body.dark .headband {
+    color: var(--white);
+}
+
+body.dark .headband:hover {
+    background: var(--green);
+    color: var(--white);
+}
+
+header.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark .hero {
+    color: var(--white);
+}
+
+body.dark .jerseys {
+    color: var(--white);
+}
+
+body.dark .jersey-grid figure {
+    background: var(--gray);
+}
+
+body.dark .contact-map .address {
+    background: var(--gray);
+}
+
+body.dark .address {
+    color: var(--white);
+}
+
+body.dark .address a {
+    color: var(--vhite);
+}
+
+body.dark .btn {
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+body.dark .btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark .container_footer {
+    background: var(--gray);
+}
