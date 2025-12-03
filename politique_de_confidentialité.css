@@ -244,3 +244,6 @@ body.dark #theme-toggle {
 body.dark .container_footer {
     background: var(--gray);
 }
+body.dark .legal-mentions{
+    color: var(--white);
+}
