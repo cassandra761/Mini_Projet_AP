@@ -285,6 +285,9 @@ body.dark .product {
     background: var(--gray);
     color: var(--white);
 }
+body.dark .product .price {
+    color: var(--white);
+}
 
 body.dark .btn {
     background-color: var(--gray);
