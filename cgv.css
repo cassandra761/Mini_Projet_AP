@@ -247,3 +247,6 @@ body.dark .container_footer {
 body.dark .legal-mentions{
     color: var(--white);
 }
+body.dark .legal-mentions h1 a{
+    color: var(--white);
+}
