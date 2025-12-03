@@ -10,9 +10,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="Logo AEM.png">
 </head>
 
@@ -34,12 +37,12 @@
     </header>
 
     <section class="hero">
-        <img src="fond-stade.jpg" alt="Stade" class="stadium-img"/>
+        <img src="fond-stade.jpg" alt="Stade" class="stadium-img" />
     </section>
 
     <div class="equipe">
         <div class="right">
-            <img src="terrain.png" alt="Equipe AEM" class="team-photo"/>
+            <img src="terrain.png" alt="Equipe AEM" class="team-photo" />
         </div>
         <div class="left">
             <h2>NOTRE EQUIPE </h2><br>
@@ -74,19 +77,34 @@
         </div>
     </div>
 
+    <div class="cart-modal" id="cart-modal" aria-hidden="true">
+        <h4>Votre panier</h4>
+        <div id="cart-items"></div>
+        <div id="cart-empty" class="cart-empty">Votre panier est vide</div>
+        <div class="cart-footer">
+            <div><strong>Total: </strong><span id="cart-total">0€</span></div>
+            <div class="cart-actions">
+                <button id="clear-cart">Vider</button>
+                <button id="checkout">Commander</button>
+            </div>
+        </div>
+    </div>
+
     <footer class="site-footer">
         <div class="container_footer">
             <div class="right_footer">
-                <a href="mentions_legales.html">Mentions légales</a> | <a href="cgv.html">Condition Générale de Ventes</a> | <a href="politique_de_confidentialité.html">Politique de confidentialité</a>
+                <a href="mentions_legales.html">Mentions légales</a> | <a href="cgv.html">Condition Générale de
+                    Ventes</a> | <a href="politique_de_confidentialité.html">Politique de confidentialité</a>
             </div>
             <div class="left_footer">
-                © <span id="year"></span> AEM — Tous droits réservés. — <i class="bi bi-instagram"></i> <i class="bi bi-facebook"></i>
+                © <span id="year"></span> AEM — Tous droits réservés. — <i class="bi bi-instagram"></i> <i
+                    class="bi bi-facebook"></i>
             </div>
         </div>
     </footer>
-            <script src="index.js"></script>
-            <script src="cart.js"></script>
-            <script src="toggle -  day and night.js"></script>
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+    <script src="toggle -  day and night.js"></script>
 </body>
 
 </html>

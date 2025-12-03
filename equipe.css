@@ -141,6 +141,81 @@ p{
 h2{
     font-family: 'oleo script', cursive;
 }
+
+/*partie pour le pannier*/
+#clear-cart {
+    background: var(--gray);
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: var(--white);
+    border: none;
+    cursor: pointer"
+
+}
+
+#checkout {
+    background: var(--green);
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: var(--white);
+    border: none;
+    cursor: pointer"
+
+}
+
+/* simple cart modal */
+.cart-modal {
+    position: fixed;
+    right: 20px;
+    top: 90px;
+    width: 320px;
+    max-height: 70vh;
+    overflow: auto;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    display: none;
+    z-index: 1200
+}
+
+.cart-modal.visible {
+    display: block
+}
+
+.cart-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--white)
+}
+
+.cart-item img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 6px
+}
+
+.cart-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+.cart-footer {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.cart-empty {
+    text-align: center;
+    padding: 18px 0;
+    color: var(--black)
+}
 /*----------------------------------------------------------------------------------------------------------------*/
           /*FIN MODIFICATION*/
 /*----------------------------------------------------------------------------------------------------------------*/

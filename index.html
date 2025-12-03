@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="Logo AEM.png">
 </head>
 
@@ -36,8 +38,7 @@
 
     <main>
         <section class="hero">
-            <img src="fond-stade.jpg"
-                alt="Stade" class="stadium-img" />
+            <img src="fond-stade.jpg" alt="Stade" class="stadium-img" />
         </section>
 
         <section class="jerseys">
@@ -54,6 +55,19 @@
             </div>
         </section>
 
+        <div class="cart-modal" id="cart-modal" aria-hidden="true">
+            <h4>Votre panier</h4>
+            <div id="cart-items"></div>
+            <div id="cart-empty" class="cart-empty">Votre panier est vide</div>
+            <div class="cart-footer">
+                <div><strong>Total: </strong><span id="cart-total">0€</span></div>
+                <div class="cart-actions">
+                    <button id="clear-cart">Vider</button>
+                    <button id="checkout">Commander</button>
+                </div>
+            </div>
+        </div>
+
         <section class="contact-map">
             <div class="address">
                 <h3>Contact et adresse</h3>
@@ -61,10 +75,11 @@
                 <p>Avenue Pierre Dugor</p>
                 <p>56007 Auray Morbihan</p>
                 <p><a href="tel:+33665964919" class="tel">Tél : 06 65 96 49 19</a></p>
-                <p><a href="mailto:arthur.letouze.pro@gmail.com " class="mail">Email : arthur.letouze.pro@gmail.com </a></p>
+                <p><a href="mailto:arthur.letouze.pro@gmail.com " class="mail">Email : arthur.letouze.pro@gmail.com </a>
+                </p>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps?q=Pl.+Th%C3%A9odore+Decker,+56000+Vannes&output=embed" 
+                <iframe src="https://www.google.com/maps?q=Pl.+Th%C3%A9odore+Decker,+56000+Vannes&output=embed"
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
@@ -73,10 +88,12 @@
     <footer class="site-footer">
         <div class="container_footer">
             <div class="right_footer">
-                <a href="mentions_legales.html">Mentions légales</a> | <a href="cgv.html">Condition Générale de Ventes</a> | <a href="politique_de_confidentialité.html">Politique de confidentialité</a>
+                <a href="mentions_legales.html">Mentions légales</a> | <a href="cgv.html">Condition Générale de
+                    Ventes</a> | <a href="politique_de_confidentialité.html">Politique de confidentialité</a>
             </div>
             <div class="left_footer">
-                © <span id="year"></span> AEM — Tous droits réservés. — <i class="bi bi-instagram"></i> <i class="bi bi-facebook"></i>
+                © <span id="year"></span> AEM — Tous droits réservés. — <i class="bi bi-instagram"></i> <i
+                    class="bi bi-facebook"></i>
             </div>
         </div>
     </footer>
